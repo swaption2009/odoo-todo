@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="view_form_todo_task" model="ir.ui.view">
+    <field name="name">To-do Task Form</field>
+    <field name="model">todo.task</field>
+    <field name="arch" type="xml">
+      <form string="To-do Task">
+        <group>
+          <field name="name"/>
+          <field name="is_done"/>
+          <field name="active" readonly="1"/>
+        </group>
+      </form>
+    </field>
+  </record>
+</odoo>
